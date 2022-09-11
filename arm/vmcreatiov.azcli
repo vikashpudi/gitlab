@@ -1,0 +1,5 @@
+New-AzResourceGroup -Name TestResourceGroup -Location South Central US
+$frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name appserver -AddressPrefix "10.0.1.0/24"
+$backendSubnet  = New-AzVirtualNetworkSubnetConfig -Name dbserver  -AddressPrefix "10.0.2.0/24"
+New-AzVirtualNetwork -Name qtnet -ResourceGroupName resourcegroupsample1 -Location South Central US -AddressPrefix "10.0.0.0/16" -Subnet $frontendSubnet,$backendSubnet
+

@@ -1,0 +1,19 @@
+{
+    "Name": "myrolevmall",
+    "IsCustom": true,
+    "Description": "Can monitor Network .",
+    "Actions": [
+        "Microsoft.Compute/*/read",
+        "Microsoft.Compute/virtualMachines/start/action",
+        "Microsoft.Compute/virtualMachines/restart/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+         "Microsoft.Support/*"],
+    "NotActions": [
+  
+    ],
+    "AssignableScopes": [
+      "/subscriptions/39ab92ff-809e-4faf-bc99-93c54eb784ac"
+    ]
+  }
